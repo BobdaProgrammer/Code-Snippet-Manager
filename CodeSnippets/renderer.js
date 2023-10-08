@@ -65,6 +65,18 @@ document.addEventListener('drop', (event) => {
     console.log(pathArr);
     addBundle('My Bundle', pathArr);
 });
+
+// Function to serialize an array to a string
+function serializeArray(arr) {
+    return JSON.stringify(arr);
+}
+
+// Function to deserialize a string to an array
+function deserializeArray(str) {
+    if (!str) return [];
+    return JSON.parse(str);
+}
+
 // add the code snippet to the list
 function CodeSnippet() {
     // find all the text needed
@@ -72,8 +84,11 @@ function CodeSnippet() {
     var tags = document.getElementById("tags").value;
     var code = document.getElementById("text").value;
     
-    // grab the already stored snippets and parse it as JSON
-    var snippets = JSON.parse(localStorage.getItem("snippets")) || [];
+    // grab the already stored snippets as a string
+    var snippetsStr = localStorage.getItem("snippets") || "[]";
+
+    // Deserialize the stored string to an array
+    var snippets = deserializeArray(snippetsStr);
 
     // store the current snippet as an array
     var snippet = [title, tags, code];
@@ -81,8 +96,8 @@ function CodeSnippet() {
     // add the current snippet to the existing snippets 
     snippets.push(snippet);
     
-    // set it back to local storage after converting to JSON
-    localStorage.setItem("snippets", JSON.stringify(snippets));
+    // Serialize the updated snippets array to a string before storing it in local storage
+    localStorage.setItem("snippets", serializeArray(snippets));
     
     console.log(snippets);
     console.log(localStorage.getItem("snippets"));

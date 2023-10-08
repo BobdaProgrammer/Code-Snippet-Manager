@@ -24,12 +24,15 @@ body{
     background-color: rgb(128, 0, 66);
     border-radius: 5px;
     border: 2px solid rgb(243, 81, 108);  
-    margin: auto;
     transition: border 0.4s ease;
+    flex-grow: 1;
+    max-width: 30%;
 }
 .titlehold{
-    margin: 7px auto;
-    width: fit-content;
+    display: flex;
+    justify-content: space-between;/* This will push the button to the far left and the textbox to the far right */
+    align-items: center;
+    width: 60%;
 }
 .title:hover{
     border: 2px solid rgb(252, 111, 135);
@@ -62,7 +65,23 @@ body{
     width: 100%;
     text-align: center;
 }
-
+.linkback{
+    text-decoration: none;
+}
+.back{
+    text-align: center;
+    border-radius: 2px;
+    width: 6%;
+    height: 4%;
+    display: inline-block;
+    outline: none;
+    border: 2px solid rgb(213, 6, 113);
+    background-color: transparent;
+    transition:  border 0.7s ease;
+}
+.back:hover{
+ border: 2px solid rgb(243, 81, 108);
+}
 .save{
     background-color: rgb(128, 0, 66);
     border-radius: 5px;

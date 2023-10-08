@@ -1,18 +1,22 @@
-.share{
-    outline: none;
-    border-radius: 75%;
-    width: 25px;
-    height: 25px;
-    padding: 15px;
-    text-align: center;
+.new:hover{
+    background-color: rgb(53, 179, 137);
 }
-.shareimg{
-    width: inherit;
-    height: inherit;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+.newer{
+    text-decoration: none;
+    color: white;
+}
+.new{
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #17f1c9;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 40px;
+    transition: background-color 0.3s ease;
 }
 .projects{
     width: fit-content;
