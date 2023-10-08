@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Code Snippets</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    </head>
+    <body>
+        <div class="titlehold">
+        <input type="text" spellcheck="false" class="title" id="title" placeholder="Title">
+        </div>
+        <div class="tagshold">
+            <input type="text" spellcheck="false" class="tags" id="tags" placeholder="Tags">
+            </div>
+        <div id="drop-container" class="container">
+        <textarea class="text" id="text" spellcheck="false"></textarea>
+          </div>
+          <div id="save" class="savecontainer">
+            <button class="save" onclick="CodeSnippet();">Save</button>
+          </div>
+          
+        <script src="renderer.js"></script>
+    </body>
+</html>

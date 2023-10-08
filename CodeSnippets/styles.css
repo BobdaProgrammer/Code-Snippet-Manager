@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(116, 5, 82);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ border-radius: 5px;
+ border: 2px solid rgb(243, 81, 108);   
+ height: 400px;
+ width: 400px;
+ margin: 7px auto;
+ display: grid;
+ background-color: rgb(128, 0, 66);
+ transition: background-color 0.7s ease, box-shadow 1s ease;
+}
+.container:hover{
+    box-shadow: 0 0 30px rgb(255,0,106); 
+    background-color: rgb(213, 6, 113);
+}
+.title{
+    background-color: rgb(128, 0, 66);
+    border-radius: 5px;
+    border: 2px solid rgb(243, 81, 108);  
+    margin: auto;
+    transition: border 0.4s ease;
+}
+.titlehold{
+    margin: 7px auto;
+    width: fit-content;
+}
+.title:hover{
+    border: 2px solid rgb(252, 111, 135);
+}
+.text{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    overflow:auto;
+}
+.tagshold{
+    margin: 7px auto;
+    width:  100%;
+    text-align: center;
+}
+.tags{
+    background-color: rgb(128, 0, 66);
+    border-radius: 5px;
+    border: 2px solid rgb(243, 81, 108);  
+    margin: auto;
+    transition: border 0.4s ease;
+    width: 25%;
+}
+.tags:hover{
+    border: 2px solid rgb(252, 111, 135);
+}
+
+.savecontainer{
+    width: 100%;
+    text-align: center;
+}
+
+.save{
+    background-color: rgb(128, 0, 66);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: 2px solid rgb(243, 81, 108);
+    transition: border 0.4s ease;
+    transition: background-color 0.5s ease;
+    padding: 5px;
+}
+.save:hover{
+    background-color: rgb(213, 6, 113);
+    border: 2px solid rgb(252, 111, 135);
+}
