@@ -19,10 +19,14 @@
     transition: background-color 0.3s ease;
     margin: auto;
 }
+.newhold{
+    width: 100%;
+    text-align: center;
+}
 .projects{
     width: 100%;
     text-align: center;
-    position: relative;
+    display: flex;
 }
 .tags{
     display: block;
@@ -47,8 +51,8 @@
     border-radius: 10px;
     padding: 5px;
     max-width: fit-content;
-    position: relative;
-    justify-items:left;
+    flex: -1;
+    margin: 3px;
 }
 
 
