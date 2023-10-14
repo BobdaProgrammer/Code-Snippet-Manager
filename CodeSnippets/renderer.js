@@ -77,6 +77,15 @@ function deserializeArray(str) {
     return JSON.parse(str);
 }
 
+
+function showSuccessTick(time) {
+  var tick = document.getElementById("successTick");
+  tick.style.display = "block";
+  setTimeout(function () {
+    tick.style.display = "none";
+  }, time);
+}
+
 // add the code snippet to the list
 function CodeSnippet() {
     // find all the text needed
@@ -101,4 +110,5 @@ function CodeSnippet() {
     
     console.log(snippets);
     console.log(localStorage.getItem("snippets"));
+    showSuccessTick(700);
 }

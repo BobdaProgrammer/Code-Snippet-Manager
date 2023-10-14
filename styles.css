@@ -22,14 +22,55 @@
 .projects{
     width: 100%;
     text-align: center;
+    position: relative;
 }
 .tags{
-    display: grid;
+    display: block;
+}
+.title{
+    display: block;
+}
+.copy{
+    font-size:15px;
+    padding-top: 6px;
+    border: none;
+    background-color: transparent;
+}
+.edit{
+    font-size: 15px;
+    padding:3px;
+    border: none;
+    background-color: transparent;
 }
 .project{
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
-    display: flex;
     max-width: fit-content;
+    position: relative;
+    justify-items:left;
+}
+
+
+.renameBox{
+    margin: auto;
+}
+.rename{
+    width: 100%;
+    text-align: center;
+}
+.success-tick {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #00b300;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 24px;
 }

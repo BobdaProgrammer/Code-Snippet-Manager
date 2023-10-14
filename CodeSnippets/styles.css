@@ -96,3 +96,19 @@ body{
     background-color: rgb(213, 6, 113);
     border: 2px solid rgb(252, 111, 135);
 }
+
+.success-tick {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #00b300;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 24px;
+}
