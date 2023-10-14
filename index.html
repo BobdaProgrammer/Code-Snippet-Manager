@@ -4,14 +4,16 @@
         <link rel="stylesheet" href="styles.css">
         <title>DocuMate</title>
     </head>
-    <div class="projects" >
+    <div class="projects" id="projects">
+        <button class="new" ><a class="newer" href="CodeSnippets/index.html">+</a></button>
         <div class="project">
             <span class="title" id="title"></span>
-            <p class="tags" id="title"></p>
-        </div>
-        <div class="project">
-            <button class="new" ><a class="newer" href="CodeSnippets/index.html">+</a></button>
+            <p class="tags" id="tags"></p>
+            <button class="copy" id="copy"><span class="copyrect" style="margin-right: .125em; position: relative; top: -.25em; left: -.125em">
+                ▯<span style="position: absolute; top: .25em; left: .25em">▯</span>
+              </span></button>
+              <button class="edit" id="edit">✏️</button>
         </div>
     </div>
-    <script type="module" src="render.js"></script>
+    <script src="render.js"></script>
 </html>
