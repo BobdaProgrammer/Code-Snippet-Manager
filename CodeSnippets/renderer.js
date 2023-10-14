@@ -83,7 +83,7 @@ function CodeSnippet() {
     var title = document.getElementById("title").value;
     var tags = document.getElementById("tags").value;
     var code = document.getElementById("text").value;
-    
+
     // grab the already stored snippets as a string
     var snippetsStr = localStorage.getItem("snippets") || "[]";
 
