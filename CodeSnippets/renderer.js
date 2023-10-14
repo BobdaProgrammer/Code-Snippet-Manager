@@ -72,7 +72,7 @@ function serializeArray(arr) {
 }
 
 // Function to deserialize a string to an array
-function deserializeArray(str) {
+export function deserializeArray(str) {
     if (!str) return [];
     return JSON.parse(str);
 }
@@ -102,3 +102,6 @@ function CodeSnippet() {
     console.log(snippets);
     console.log(localStorage.getItem("snippets"));
 }
+
+
+document.getElementById("myButton").addEventListener("click", CodeSnippet);
