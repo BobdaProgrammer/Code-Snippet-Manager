@@ -11,7 +11,6 @@ function createWindow () {
             nodeIntegration: true
         }
     })
-    win.webContents.openDevTools()
     win.loadFile('index.html');
 }
 
