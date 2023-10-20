@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(116, 5, 82);
+}
 .new:hover{
     background-color: rgb(53, 179, 137);
 }
@@ -17,11 +20,11 @@
     color: white;
     font-size: 40px;
     transition: background-color 0.3s ease;
-    margin: auto;
 }
 .newhold{
-    width: 100%;
+    width: fit-content;
     text-align: center;
+    margin: auto;
 }
 .projects{
     width: 100%;
@@ -47,21 +50,56 @@
     background-color: transparent;
 }
 .project{
+    background-color: rgb(94, 5, 67);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 2px solid black;
     border-radius: 10px;
     padding: 5px;
     max-width: fit-content;
     flex: -1;
     margin: 3px;
+    transition: background-color 0.7s ease;
 }
 
+.project:hover{
+    background-color: rgb(131, 8, 94);
+}
 
 .renameBox{
     margin: auto;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(116, 5, 82);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 7px;
+    border: 1px solid rgb(255,0,106);
+    transition: background-color 0.7s ease;
+}
+.renameBox:hover{
+    background-color: rgb(149, 7, 106);
+}
+.oktorename{
+    width: 500px;
+    display: grid;
+    outline: none;
+    background-color: turquoise;
+    border-radius: 4px;
+    border: 2px solid black;
+    color: white;
 }
 .rename{
     width: 100%;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px black;
+    padding: 5px;
+    max-width: fit-content;
+    margin: auto;
+    background-color: rgb(94, 5, 67);
 }
 .success-tick {
     display: none;
