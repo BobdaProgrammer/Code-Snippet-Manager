@@ -47,12 +47,9 @@ fs.readFile(filePath, 'utf-8', (err, data) => {
     }
     // The data variable contains the file content as a string
     console.log('File content:', data);
-win.loadFile('CodeSnippets/index.html'); // Load your HTML file
+//win.loadFile('CodeSnippets/index.html');
 
-win.webContents.on('did-finish-load', () => {
-  // Send the data to the renderer process
   win.webContents.send('data', data);
-});
 
 });
 

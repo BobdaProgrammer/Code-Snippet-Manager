@@ -1,12 +1,10 @@
-const {ipcRenderer} = require('electron')
+const {ipcRenderer} = require('electron');
 const dropContainer = document.getElementById('drop-container');
 
 dropContainer.addEventListener('dragover', (e) => {
     e.preventDefault();
     e.stopPropagation();
 });
-
-    
 
 
 
@@ -37,10 +35,10 @@ dropContainer.addEventListener('drop', (event) => {
 });
 ipcRenderer.on('data', (event, data) => {
     // 'data' contains the variable sent from main.js
-    console.log(data); // You can use the data in your renderer process
+    console.log("this is the text: ", data); // You can use the data in your renderer process
     document.getElementById("text").value += data;
   });
-  
+
 let bundles = [];
 
 function addBundle(title, filePaths) {
